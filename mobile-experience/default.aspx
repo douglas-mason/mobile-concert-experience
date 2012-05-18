@@ -40,15 +40,6 @@
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
           </div>
-            <!--
-          <div class="thumbnail">
-            <img src="/img/maroon5.jpg" alt="">
-            <div class="caption">
-              <h5>This Weekend!</h5>
-              <p>Grammy winning pop group Maroon 5 will be performing this weekend at Stage AE - North Shore.  Order tickets now before they are sold out!</p>
-              <p><a href="#" class="btn btn-primary">Buy Tickets</a> <a href="#" class="btn">Action</a></p>
-            </div>
-          </div>-->
             <img src="/img/stage_ae_logo.jpg" />
        <script type="text/javascript">
            $('.carousel').carousel({interval: 4000});
