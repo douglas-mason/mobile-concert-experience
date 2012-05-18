@@ -34,9 +34,6 @@
             if (window.location.pathname.indexOf("friends.aspx") != -1) {
                 $("#link-friends").addClass("active");
             }
-            //if (window.location.pathname.indexOf("search.aspx") != -1) {
-            //    $("#link-search").addClass("active");
-           // }
         });
 
     </script>
