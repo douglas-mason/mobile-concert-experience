@@ -10,3 +10,11 @@ body
     width: 330px;
     height: 303px;
 }
+#input-search
+{
+    margin: 8px;
+}
+.modal
+{
+    margin-top: -280px !important;
+}

@@ -56,12 +56,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="buy-ticket.aspx" />
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap-responsive.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style.css" />
     <Content Include="default.aspx" />
+    <Content Include="event-detail.aspx" />
     <Content Include="friends.aspx" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
@@ -80,16 +82,31 @@
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="my-stage-ae.aspx" />
     <Content Include="search.aspx" />
+    <Content Include="thank-you-confirmation.aspx" />
     <Content Include="upcoming-events.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buy-ticket.aspx.cs">
+      <DependentUpon>buy-ticket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="buy-ticket.aspx.designer.cs">
+      <DependentUpon>buy-ticket.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="event-detail.aspx.cs">
+      <DependentUpon>event-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="event-detail.aspx.designer.cs">
+      <DependentUpon>event-detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="friends.aspx.cs">
       <DependentUpon>friends.aspx</DependentUpon>
@@ -119,6 +136,13 @@
     </Compile>
     <Compile Include="search.aspx.designer.cs">
       <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="thank-you-confirmation.aspx.cs">
+      <DependentUpon>thank-you-confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="thank-you-confirmation.aspx.designer.cs">
+      <DependentUpon>thank-you-confirmation.aspx</DependentUpon>
     </Compile>
     <Compile Include="upcoming-events.aspx.cs">
       <DependentUpon>upcoming-events.aspx</DependentUpon>

@@ -1,4 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master/base.Master" AutoEventWireup="true" CodeBehind="my-stage-ae.aspx.cs" Inherits="mobile_experience.my_stage_ae" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master/base.Master" AutoEventWireup="true"
+    CodeBehind="my-stage-ae.aspx.cs" Inherits="mobile_experience.my_stage_ae" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -41,6 +43,18 @@
             <button class="close" data-dismiss="modal">×</button>
             <h3>Ticket</h3>
         </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                hideModal();
+            });
+
+            var showModal = function (e) {
+                $('#myModal').modal('show');
+            }
+            var hideModal = function (e) {
+                $('#myModal').modal('hide');
+            }
+        </script>
         <div class="modal-body">
             <p>Your ticket for event: Rihanna</p>
             <div class="thumbnail">
@@ -51,17 +65,4 @@
             <a href="#" class="btn" onclick="hideModal()">Close</a>
         </div>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            //$('#myModal').modal('hide');
-            hideModal();
-        });
-
-        var showModal = function (e) {
-            $('#myModal').modal('show');
-        }
-        var hideModal = function (e) {
-            $('#myModal').modal('hide');
-        }
-    </script>
 </asp:Content>

@@ -1,11 +1,10 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="base.master.cs" Inherits="mobile_experience.master._base" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Welcome to Stage AE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
@@ -18,8 +17,6 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <link href="../css/style.css" rel="stylesheet" />
     <link href="../css/bootstrap-responsive.min.css" rel="stylesheet" />
-    
-
     <script>
         $(document).ready(function () {
             if (window.location.pathname.indexOf("default.aspx") != -1 || window.location.pathname == "/") {
@@ -37,46 +34,41 @@
         });
 
     </script>
-
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    <div class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a><a href="/default.aspx" class="brand">Stage AE</a>
-            <div class="nav-collapse">
-			<ul class="nav">
-
-				<li id="link-home">
-					<a href="/default.aspx" >Home</a>
-				</li>
-				<li id="link-upcoming-events">
-					<a href="/upcoming-events.aspx" >Upcoming Events</a>
-				</li>
-				<li id="link-my-stage-ae">
-					<a href="/my-stage-ae.aspx" >My Stage AE</a>
-				</li>
-				<li id="link-friends">
-					<a href="/friends.aspx" >Friends</a>
-				</li>      
-			</ul>
-            <form class="navbar-search pull-left">
-                <input id="input-search" type="text" class="search-query" placeholder="Search">
-            </form>
-                
+    <div class="container">
+        <div class="row">
+            <div class="span8 offset2">
+                <div class="navbar navbar-fixed-top">
+                    <div class="navbar-inner">
+                        <div class="container">
+                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                                class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </a><a href="/default.aspx" class="brand">Stage AE</a>
+                            <div class="nav-collapse">
+                                <ul class="nav">
+                                    <li id="link-home"><a href="/default.aspx">Home</a></li>
+                                    <li id="link-upcoming-events"><a href="/upcoming-events.aspx">Upcoming Events</a>
+                                    </li>
+                                    <li id="link-my-stage-ae"><a href="/my-stage-ae.aspx">My Stage AE</a></li>
+                                    <li id="link-friends"><a href="/friends.aspx">Friends</a></li>
+                                </ul>
+                                <form class="navbar-search">
+                                <input id="input-search" type="text" class="search-query pull-right" placeholder="Search">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-		</div>
-	</div>
-</div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span8 offset2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
     </div>
     </form>
     <script type="text/javascript">
@@ -87,13 +79,21 @@
                     return false;
                 }
             });
+            $("ul.typeahead").click(function (e) {
+                    window.location = "/search.aspx";
+                    return false;
+                });
+            /*$("ul.typeahead li").select(function (e) {
+                if (e.keyCode == 13) {
+                    window.location = "/search.aspx";
+                    return false;
+                }
+            });*/
         });
 
-     var dataSource = ["Maroon 5", "The Wanted", "Wiz Khalifa", "Rihanna", "Linkin Park", "Mumford & Sons", "Train", "Tyga", "Bon Iver"];
+        var dataSource = ["Maroon 5", "The Wanted", "Wiz Khalifa", "Rihanna", "Linkin Park", "Mumford & Sons", "Train", "Tyga", "Bon Iver"];
         var items = 4;
-
         $('#input-search').typeahead({ source: dataSource });
-        
     </script>
 </body>
 </html>
