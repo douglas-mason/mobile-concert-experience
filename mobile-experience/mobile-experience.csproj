@@ -67,10 +67,14 @@
     <Content Include="friends.aspx" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\jenny.jpg" />
+    <Content Include="img\john.jpg" />
+    <Content Include="img\josh.jpg" />
     <Content Include="img\lmfao.jpg" />
     <Content Include="img\maroon5.jpg" />
     <Content Include="img\rihanna-qr-code.png" />
     <Content Include="img\rihanna.jpg" />
+    <Content Include="img\share-on-facebook.png" />
     <Content Include="img\stage_ae_logo.jpg" />
     <Content Include="js\bootstrap-carousel.js" />
     <Content Include="js\bootstrap-collapse.js" />

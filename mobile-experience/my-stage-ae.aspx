@@ -1,16 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master/base.Master" AutoEventWireup="true"
     CodeBehind="my-stage-ae.aspx.cs" Inherits="mobile_experience.my_stage_ae" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
         <div class="span8">
+            <div class="page-header"><h1>Events I'm Attending</h1></div>
             <table class="table">
                 <thead>
-                    <tr>
-                        <th>Events I'm Attending</th>
-                    </tr>
                     <tr>
                         <th>Artist</th>
                         <th>Date</th>
@@ -25,14 +22,14 @@
                         <td>June 15th</td>
                         <td>7:00 PM</td>
                         <td>North Shore</td>
-                        <td><a href="#" class="btn btn-primary" onclick="showModal()">View Ticket</a></td>
+                        <td><a href="#" class="btn btn-primary" onclick="modalArtist('Rihanna');showModal()">View Ticket</a></td>
                     </tr>
                     <tr>
                         <td>The Wanted</td>
                         <td>August 21st</td>
                         <td>8:00 PM</td>
                         <td>South Side</td>
-                        <td><a href="#" class="btn btn-primary">View Ticket</a></td>
+                        <td><a href="#" class="btn btn-primary" onclick="modalArtist('The Wanted');showModal();">View Ticket</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -54,12 +51,12 @@
             var hideModal = function (e) {
                 $('#myModal').modal('hide');
             };
-            var modalArtist = function (e) {
-                
+            var modalArtist = function (artistName) {
+                $('#artist').text(artistName);
             };
         </script>
         <div class="modal-body">
-            <p id="artist">Your ticket for event: Rihanna</p>
+            <p>Your ticket for event: <span id="artist">Rihanna</span></p>
             <div class="thumbnail">
                 <img src="/img/rihanna-qr-code.png" alt=""/>
             </div>

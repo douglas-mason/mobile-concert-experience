@@ -4,11 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div class="row">
         <div class="span8">
+            <div class="page-header"><h1>Upcoming Events</h1></div>
             <table class="table">
                 <thead>
-                    <tr>
-                        <th>Upcoming Events</th>
-                    </tr>
                     <tr>
                         <th>Artist</th>
                         <th>Date</th>
