@@ -87,6 +87,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StageAEEvent.cs" />
     <Compile Include="buy-ticket.aspx.cs">
       <DependentUpon>buy-ticket.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -162,7 +163,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="master\base.Master" />
   </ItemGroup>

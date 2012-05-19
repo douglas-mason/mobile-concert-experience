@@ -29,9 +29,9 @@
                     </tr>
                     <tr>
                         <td>The Wanted</td>
-                        <td>August 17th</td>
+                        <td>August 21st</td>
                         <td>8:00 PM</td>
-                        <td>Monroeville</td>
+                        <td>South Side</td>
                         <td><a href="#" class="btn btn-primary">View Ticket</a></td>
                     </tr>
                 </tbody>
@@ -50,15 +50,18 @@
 
             var showModal = function (e) {
                 $('#myModal').modal('show');
-            }
+            };
             var hideModal = function (e) {
                 $('#myModal').modal('hide');
-            }
+            };
+            var modalArtist = function (e) {
+                
+            };
         </script>
         <div class="modal-body">
-            <p>Your ticket for event: Rihanna</p>
+            <p id="artist">Your ticket for event: Rihanna</p>
             <div class="thumbnail">
-                <img src="/img/rihanna-qr-code.png" alt="">
+                <img src="/img/rihanna-qr-code.png" alt=""/>
             </div>
         </div>
         <div class="modal-footer">

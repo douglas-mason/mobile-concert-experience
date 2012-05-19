@@ -13,9 +13,9 @@
                             <img src="/img/maroon5.jpg" alt="">
                             <div class="carousel-caption">
                                 <p>This Weekend!</p>
-                                <p>Grammy winning pop group Maroon 5 will be performing this weekend at Stage AE - North
-                                    Shore. Order tickets now before they are sold out!</p>
-                                <p><a href="#" class="btn btn-primary">Buy Tickets</a></p>
+                                <p>Grammy winning pop group Maroon 5 will be performing this weekend at Stage AE - Monroeville.  
+                                    Order tickets now before they are sold out!</p>
+                                <p><a href="/buy-ticket.aspx" class="btn btn-primary">Buy Tickets</a></p>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                                 <p>June 15th!</p>
                                 <p>R&B superstar Rihanna takes the stage next month. Tickets go on sale June 1st!
                                 </p>
-                                <p><a href="#" class="btn btn-primary">Add to My Stage AE</a></p>
+                                <p><a href="/buy-ticket.aspx" class="btn btn-primary">Buy Tickets</a></p>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                                 <p>Fourth of July!</p>
                                 <p>Come Party Rock with LMFAO on Independence Day! Downtown fireworks begin after the
                                     concert.</p>
-                                <p><a href="#" class="btn btn-primary">Buy Tickets</a></p>
+                                <p><a href="/buy-ticket.aspx" class="btn btn-primary">Buy Tickets</a></p>
                             </div>
                         </div>
                     </div>

@@ -2,6 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    Purchase Successful
-    Email confirmation has been sent.
+    <div class="alert alert-success">
+        <strong>Purchase Successful!</strong><br />Email confirmation has been sent.
+    </div>
+    <img src="/img/share-on-facebook.png" style="height: 28px;"/>
+    <a href="/my-stage-ae.aspx" class="btn btn-primary">View My Stage AE</a>
 </asp:Content>
