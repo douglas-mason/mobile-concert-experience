@@ -5,6 +5,6 @@
     <div class="alert alert-success">
         <strong>Purchase Successful!</strong><br />Email confirmation has been sent.
     </div>
-    <img src="/img/share-on-facebook.png" style="height: 28px;"/>
+    <a href="#" class="zocial facebook">Share on Facebook</a>
     <a href="/my-stage-ae.aspx" class="btn btn-primary">View My Stage AE</a>
 </asp:Content>

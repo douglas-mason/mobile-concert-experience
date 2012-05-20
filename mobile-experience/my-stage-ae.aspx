@@ -37,6 +37,7 @@
                     </tr>
                 </tbody>
             </table>
+            <a href="#" class="zocial facebook">Sign in with Facebook</a>
         </div>
     </div>
     <div class="modal fade" id="myModal">
