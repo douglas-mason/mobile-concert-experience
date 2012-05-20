@@ -5,7 +5,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
         <div class="span8">
-            <div class="page-header"><h1>Events I'm Attending</h1></div>
+            <div class="page-header">
+                <h1>Events I'm Attending</h1>
+            </div>
             <table class="table">
                 <thead>
                     <tr>
@@ -22,14 +24,16 @@
                         <td>June 15th</td>
                         <td>7:00 PM</td>
                         <td>North Shore</td>
-                        <td><a href="#" class="btn btn-primary" onclick="modalArtist('Rihanna');showModal()">View Ticket</a></td>
+                        <td><a href="#" class="btn btn-primary" onclick="modalArtist('Rihanna');showModal()">
+                            View Ticket</a></td>
                     </tr>
                     <tr>
                         <td>The Wanted</td>
                         <td>August 21st</td>
                         <td>8:00 PM</td>
                         <td>South Side</td>
-                        <td><a href="#" class="btn btn-primary" onclick="modalArtist('The Wanted');showModal();">View Ticket</a></td>
+                        <td><a href="#" class="btn btn-primary" onclick="modalArtist('The Wanted');showModal();">
+                            View Ticket</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -58,7 +62,7 @@
         <div class="modal-body">
             <p>Your ticket for event: <span id="artist">Rihanna</span></p>
             <div class="thumbnail">
-                <img src="/img/rihanna-qr-code.png" alt=""/>
+                <img src="/img/rihanna-qr-code.png" alt="" />
             </div>
         </div>
         <div class="modal-footer">
