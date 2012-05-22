@@ -37,7 +37,7 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="#" class="zocial facebook">Sign in with Facebook</a>
+            <img src="img/share-on-facebook.png" />
         </div>
     </div>
     <div class="modal fade" id="myModal">
