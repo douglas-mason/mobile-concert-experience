@@ -80,6 +80,7 @@
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="my-stage-ae.aspx" />
     <Content Include="search.aspx" />
+    <Content Include="test\WebForm1.aspx" />
     <Content Include="upcoming-events.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -119,6 +120,13 @@
     </Compile>
     <Compile Include="search.aspx.designer.cs">
       <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="upcoming-events.aspx.cs">
       <DependentUpon>upcoming-events.aspx</DependentUpon>

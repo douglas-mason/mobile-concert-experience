@@ -3,7 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
-		<div class="span8"> 
+		<div class="span8">
+ 
             <div id="myCarousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="active item">
